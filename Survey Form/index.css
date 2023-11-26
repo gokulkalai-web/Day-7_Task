@@ -1,0 +1,106 @@
+body {
+    margin: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+}
+
+.firstname {
+    width: calc(100% - 80vw);
+}
+
+.lastname {
+    width: calc(100% - 80vw);
+}
+
+.firstname>input {
+    margin: 5px 0;
+    width: 100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQToUoFvry1Km-u80Ohgf8DvFC674TeVFYyQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 12px;
+}
+
+.lastname>input,
+.lnamespan {
+    margin: 5px;
+    margin-left: 30px;
+    width: 100%;
+}
+
+input {
+    line-height: 28px;
+    border: 2px solid rgb(211, 205, 205);
+    border-radius: 3px;
+}
+
+.email {
+    width: calc(100% - 60vw);
+}
+
+.email>input {
+    margin: 5px 0;
+    width: 100%;
+}
+
+i {
+    padding: 1px;
+    margin-top: 5px;
+}
+
+.red-star {
+    color: red;
+}
+.table-1{ 
+  overflow-x: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border-radius: 50px;
+}
+
+td:first-child {
+    width: 150px;
+}
+
+textarea {
+    width: 100%;
+    border: 2px solid rgb(211, 205, 205);
+}
+
+
+@media screen and (max-width: 700px) {
+    .firstname {
+        width: calc(100% - 60vw);
+    }
+
+    .lastname {
+        width: calc(100% - 60vw);
+    }
+
+    .email {
+        width: calc(100% - 20vw);
+    }
+
+    .table-1{
+        overflow-x: auto;
+    }
+}
